@@ -1,0 +1,15 @@
+.Input {
+    outline: 0;
+    font: inherit;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 4px;
+    margin: 0 8px 0 0;
+    border: 1px solid #1a5287;
+    background-color: #dbe3f2;
+    box-sizing: border-box;
+}
+
+.Input:hover, .Input:focus {
+    background-color: #a8cced;
+}

@@ -1,0 +1,18 @@
+.Button {
+    font: inherit;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    box-sizing: border-box;
+}
+
+.Button:hover {
+    background-color: #dfdfdf;
+    border: 1px solid #545454;
+}
+.Button:active {
+    background-color: #c2c2c2;
+}
