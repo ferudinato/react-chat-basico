@@ -7,7 +7,7 @@ const input = (props) => (
         type={props.inputType} 
         placeholder={props.placeholder}
         onChange={props.changed} 
-        value={props.val}
+        value={props.msgInput}
         className={Styles.Input} />
 )
 
