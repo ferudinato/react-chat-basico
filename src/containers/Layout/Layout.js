@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 
+import Styles from './Layout.module.css';
+
 class Layout extends Component {
     render() {
         return (
-            <div>
+            <div className={Styles.Layout}>
                 {this.props.children}
             </div>
         )
     }
 }
 
-export default layout;
+export default Layout;
