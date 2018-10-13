@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import Styles from './App.module.css';
 
-class App extends Component {
-  render() {
+import Chat from './containers/Chat/Chat';
+import Layout from './containers/Layout/Layout';
+
+const app = () => {
     return (
-      <div className={Styles.App}>
-        
-      </div>
-    );
-  }
+        <Layout>
+            <Chat />
+        </Layout>
+    )
 }
 
-export default App;
+export default app;
