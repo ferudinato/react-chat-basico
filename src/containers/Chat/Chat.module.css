@@ -1,0 +1,15 @@
+.Chat {
+    margin: 10px auto;
+    width: 600px;
+    border: 1px solid #747474;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px #747474;
+    background-color: #fff;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.Chat .UserInput {
+    display: flex;
+    
+}
