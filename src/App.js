@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Chat from './containers/Chat/Chat';
 import Layout from './containers/Layout/Layout';
