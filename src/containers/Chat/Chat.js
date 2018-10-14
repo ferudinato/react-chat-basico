@@ -18,15 +18,21 @@ class Chat extends Component {
         this.setState({userInput: inputValue})
     }
 
-    sentMsgHandler = (e) => {
+    sentMsgHandler = (e, action) => {
         e.preventDefault()
         const updatedMessages = [...this.state.messages]
+        let pressed = false
+        if (e.keyCode && e.keyCode === 13) {
+            pressed = true
+        }
         if (this.state.userInput.length > 0) {
-            updatedMessages.push({
-                author: 'Guest',
-                msg: this.state.userInput
-            })
-            this.setState({messages: updatedMessages, userInput: ''})
+            if (pressed || action === 'click') {
+                updatedMessages.unshift({
+                    author: 'Guest',
+                    msg: this.state.userInput
+                })
+                this.setState({messages: updatedMessages, userInput: ''})
+            }
         }
         
     }
@@ -40,8 +46,9 @@ class Chat extends Component {
                         inputType='text'
                         placeholder='¿Que mensaje vas a enviar?'
                         changed={this.syncMsgInputHandler}
+                        keyPressed={this.sentMsgHandler}
                         msgInput={this.state.userInput} />
-                    <Button clicked={this.sentMsgHandler}>Enviar</Button>
+                    <Button clicked={(e) => this.sentMsgHandler(e, 'click')}>Enviar</Button>
                 </div>
             </div>
         )
