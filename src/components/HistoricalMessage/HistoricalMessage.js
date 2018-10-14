@@ -6,10 +6,10 @@ const historicalMsg = (props) => {
     return (
         <section className={Styles.HistoricalMessage}>
             <ul className={Styles.Messages}>
-                    <li>Message 01</li>
-                    <li>Message 02</li>
-                    <li>Another Message 03</li>
-                </ul>
+                {props.messages.map((i, idx) =>
+                    <li key={idx}><span className={Styles.Author}>{i.author}:</span>{i.msg}</li>
+                )}
+            </ul>
         </section>
     )
 }
