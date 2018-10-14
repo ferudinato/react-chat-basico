@@ -5,11 +5,11 @@
     width: 100%;
     padding: 4px;
     margin: 0 8px 0 0;
-    border: 1px solid #1a5287;
+    border: 1px solid #4b6a87;
     background-color: #dbe3f2;
     box-sizing: border-box;
 }
 
 .Input:hover, .Input:focus {
-    background-color: #a8cced;
+    background-color: #d7dde3;
 }

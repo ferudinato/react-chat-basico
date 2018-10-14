@@ -7,6 +7,7 @@ const input = (props) => (
         type={props.inputType} 
         placeholder={props.placeholder}
         onChange={props.changed} 
+        onKeyUp={props.keyPressed}
         value={props.msgInput}
         className={Styles.Input} />
 )
