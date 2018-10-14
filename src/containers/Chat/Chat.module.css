@@ -1,6 +1,5 @@
 .Chat {
     margin: 10px auto;
-    width: 600px;
     border: 1px solid #747474;
     border-radius: 4px;
     box-shadow: 2px 2px 2px #747474;
@@ -11,5 +10,72 @@
 
 .Chat .UserInput {
     display: flex;
-    
+    margin-top: 10px;
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    .Chat {
+        width: 60%;
+    }
+}
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .Chat {
+        width: 80%;
+    }
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Chat {
+        width: 80%
+    }
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .Chat {
+        width: 75%;
+    }
+}
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+@media (min-width: 481px) and (max-width: 767px) {
+    .Chat {
+        width: 75%;
+    }
+}
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+@media (min-width: 320px) and (max-width: 480px) {
+    .Chat {
+        width: 95%;
+    }
 }
